@@ -27,6 +27,7 @@ Hybrid Custom Framework to Test the REST APIs
 
 ## How to run your Testcase Parallel 
 `` pip install pytest-xdist ``
+`` pytest -n auto tests/integration_test/test_create_booking.py -s -v `` 
 
 
 ``pytest -n auto tests/integration_test/test_create_booking.py -s -v
@@ -38,3 +39,5 @@ Hybrid Custom Framework to Test the REST APIs
 
 ### To work wit JSON Schema
 ```pip install jsonschema```
+
+### .gitignore creater for dotenv and pycharm+all
