@@ -1,5 +1,8 @@
 from src.constants.api_constants import Base_URL, base_url, APIConstants
 
+print(Base_URL)
+url = APIConstants.base_url()
+
 
 def test_crud():
     print(Base_URL)

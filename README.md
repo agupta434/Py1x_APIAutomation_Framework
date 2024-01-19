@@ -24,6 +24,10 @@ Hybrid Custom Framework to Test the REST APIs
 ## To Install the Freeze Version
 ``pip install -r requirements.txt``
 
+## To run test 
+``pytest tests/integration_test/test_create_booking.py -s -v --alluredir=./reports``
+## To open allure report 
+``allure serve reports``
 
 ## How to run your Testcase Parallel 
 `` pip install pytest-xdist ``
