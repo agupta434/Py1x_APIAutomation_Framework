@@ -1,0 +1,20 @@
+[{'username': 'admin', 'password': 'password123'}]
+[{'username': 'admin', 'password': 'password123'}, {'username': 'admin123', 'password': 'admin321'}]
+[{'username': 'admin', 'password': 'password123'}, {'username': 'admin123', 'password': 'admin321'}, {'username': 'admin123', 'password': 'admin526'}]
+[{'username': 'admin', 'password': 'password123'}, {'username': 'admin123', 'password': 'admin321'}, {'username': 'admin123', 'password': 'admin526'}, {'username': 'admin123', 'password': 'admin598'}]
+[{'username': 'admin', 'password': 'password123'}, {'username': 'admin123', 'password': 'admin321'}, {'username': 'admin123', 'password': 'admin526'}, {'username': 'admin123', 'password': 'admin598'}, {'username': 'admin123', 'password': 'admin365'}]
+admin password123
+<Response [200]>
+<Response [200]>
+admin123 admin321
+<Response [200]>
+<Response [200]>
+admin123 admin526
+<Response [200]>
+<Response [200]>
+admin123 admin598
+<Response [200]>
+<Response [200]>
+admin123 admin365
+<Response [200]>
+<Response [200]>

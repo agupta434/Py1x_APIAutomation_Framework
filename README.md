@@ -26,8 +26,12 @@ Hybrid Custom Framework to Test the REST APIs
 
 ## To run test 
 ``pytest tests/integration_test/test_create_booking.py -s -v --alluredir=./reports``
+``pytest tests/datadriventesting/test_ddt.py --alluredir=reports``
+  `` -s -v ``
 ## To open allure report 
 ``allure serve reports``
+## To clean allure report 
+``allure generate --clean``
 
 ## How to run your Testcase Parallel 
 `` pip install pytest-xdist ``

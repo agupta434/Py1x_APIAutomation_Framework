@@ -34,15 +34,10 @@ def make_request_auth(username, password):
     print(response)
     return response
 
-
-def test_post_create_token():
-    file_path = r"Y:\8_API_Python\Py1x_APIAutomation_Framework\tests\datadriventesting\testddt_ddt.xlsx"
-    credentials = read_credentials_from_excel(file_path)
-
-    for user_cred in credentials:
-        username = user_cred["username"]
-        password = user_cred["password"]
-        print(username, password)
-        response = make_request_auth(username, password)
-        print(response)
-        assert response.status_code == 200
+@pytest.mark.parametrize("user_cred", read_credentials_from_excel(r"Y:\8_API_Python\Py1x_APIAutomation_Framework\tests\datadriventesting\testddt_ddt.xlsx"))
+def test_post_create_token(user_cred):
+    username = user_cred["username"]
+    password = user_cred["password"]
+    response = make_request_auth(username, password)
+    print(response)
+    assert response.status_code == 200

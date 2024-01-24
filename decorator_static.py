@@ -1,5 +1,8 @@
 class MyClass:
     class_variable = "I am a class variable"
+    # The __init__ method is a special method in Python classes and is used to initialize the instance's attributes.
+    # The self parameter is a reference to the instance itself. It is automatically passed when you create an instance,
+    # and you use it to refer to instance variables.
 
     def __init__(self, instance_variable):
         self.instance_variable = instance_variable
