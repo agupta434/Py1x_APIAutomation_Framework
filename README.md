@@ -49,3 +49,5 @@ Hybrid Custom Framework to Test the REST APIs
 ```pip install jsonschema```
 
 ### .gitignore creater for dotenv and pycharm+all
+ ``pip install python-dotenv``
+

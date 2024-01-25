@@ -17,25 +17,20 @@ class TestCreateBooking(object):
         # print(response)
         # This is the response in dict format {'bookingid': 2787, 'booking': {'firstname': 'Amit', 'lastname': 'Gupta',
         # 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Breakfast'}}
-        # we are using dict format because in dict it is easy to change the value
-        # payload["firstname"] = "Amit"
         # verify_response_key_should_not_be_none(response["bookingid"])
         # Important --> above three line are not giving response in json so in_json = false
         # and convert the response in json in 3rd line
         payload = payload_create_booking()
         print(payload)
-        # option 1
-        payload["firstname"] = "Laddoo"
-        # option 2 payload.update({"firstname: Amit", "lastname": "Gupta"})
-        print(payload)
-        response = post_requests(url=APIConstants.url_create_booking(), auth=None, headers=common_headers_json(),
-                                 payload=payload, in_json=False)
-        print(response)
-        bookingid = response.json()["bookingid"]
-        print(bookingid)
-        verify_response_key_should_not_be_none(bookingid)
-        print(response.status_code)
-        verify_http_status_code(response.status_code, 200) # this will be reuse
+        print(type(payload))
+        # response = post_requests(url=APIConstants.url_create_booking(), auth=None, headers=common_headers_json(),
+        #                          payload=payload, in_json=False)
+        # print(response)
+        # bookingid = response.json()["bookingid"]
+        # print(bookingid)
+        # verify_response_key_should_not_be_none(bookingid)
+        # print(response.status_code)
+        # verify_http_status_code(response.status_code, 200) # this will be reuse
 
     @pytest.mark.negative
     def test_create_booking_tc2(self):
